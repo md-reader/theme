@@ -1,0 +1,16 @@
+{
+  "name": "md-reader-theme-juejin",
+  "version": "1.0.0",
+  "description": "md-reader's juejin theme.",
+  "main": "src/index.less",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-reader/mr-theme-juejin.git"
+  },
+  "author": "Bener",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/md-reader/mr-theme-juejin/issues"
+  },
+  "homepage": "https://github.com/md-reader/mr-theme-juejin#readme"
+}
