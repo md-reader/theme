@@ -1,6 +1,6 @@
 {
-  "name": "md-reader-theme-juejin",
-  "version": "1.0.1",
+  "name": "@md-reader/theme-juejin",
+  "version": "1.0.2",
   "description": "md-reader's juejin theme.",
   "main": "src/index.less",
   "repository": {
