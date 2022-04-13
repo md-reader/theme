@@ -1,0 +1,21 @@
+lockfileVersion: 5.3
+
+specifiers:
+  katex: ^0.15.3
+
+dependencies:
+  katex: 0.15.3
+
+packages:
+
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+    dev: false
+
+  /katex/0.15.3:
+    resolution: {integrity: sha512-Al6V7RJsmjklT9QItyHWGaQCt+NYTle1bZwB1e9MR/tLoIT1MXaHy9UpfGSB7eaqDgjjqqRxQOaQGrALCrEyBQ==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+    dev: false

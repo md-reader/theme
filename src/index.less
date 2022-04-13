@@ -1,3 +1,15 @@
-@import url('./highlight.less');
-@import url('./theme.less');
-@import url('./katex.less');
+& {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: normal;
+  font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Hiragino Sans GB, Microsoft YaHei,
+    Helvetica Neue, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  word-break: break-word;
+  overflow-x: hidden;
+
+  @import url('./theme.less');
+  @import url('./highlight.less');
+  @import url('./katex.less');
+}

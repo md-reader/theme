@@ -1,6 +1,6 @@
 {
   "name": "@md-reader/theme-juejin",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "md-reader's juejin theme.",
   "main": "src/index.less",
   "repository": {
@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/md-reader/mr-theme-juejin/issues"
   },
-  "homepage": "https://github.com/md-reader/mr-theme-juejin#readme"
+  "homepage": "https://github.com/md-reader/mr-theme-juejin#readme",
+  "dependencies": {
+    "katex": "^0.15.3"
+  }
 }
