@@ -1,4 +1,4 @@
-& {
+.theme() {
   font-size: 16px;
   line-height: 1.7;
   font-weight: normal;
@@ -10,6 +10,14 @@
   overflow-x: hidden;
 
   @import url('./theme.less');
-  @import url('./highlight.less');
+  @import url('./highlight/index.less');
   @import url('./katex.less');
+}
+
+.hljs-light() {
+  @import url('./highlight/light.less');
+}
+
+.hljs-dark() {
+  @import url('./highlight/dark.less');
 }
