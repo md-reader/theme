@@ -1,3 +1,3 @@
-# @md-reader/theme-juejin
+# @md-reader/theme
 
-md-reader's juejin theme.
+md-reader's default theme.
