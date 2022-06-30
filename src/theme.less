@@ -190,7 +190,7 @@ blockquote {
     content: '';
   }
 
-  & > :last-child {
+  &:not(.warning,.tip) > :last-child {
     margin-bottom: 0;
   }
 
@@ -202,6 +202,7 @@ blockquote {
     position: relative;
     border-left-color: var(--color-warning);
     margin-left: 8px;
+    background: var(--color-block-bg);
   }
 
   &.warning:before,
@@ -226,6 +227,7 @@ blockquote {
     position: relative;
     border-left-color: var(--color-primary);
     margin-left: 8px;
+    background: var(--color-block-bg);
   }
 
   &.tip:before {
