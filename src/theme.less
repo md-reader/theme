@@ -61,6 +61,7 @@ img {
   width: auto;
   height: auto;
   opacity: var(--opacity-img);
+  max-height: none;
   &[align='right'] {
     float: right;
     width: 120px !important;
@@ -88,9 +89,9 @@ img {
     max-width: 100% !important;
     vertical-align: text-bottom;
   }
-  // &:not(.equation) {
-  //   cursor: zoom-in;
-  // }
+  &:not(.equation) {
+    cursor: zoom-in;
+  }
 }
 
 input[type='checkbox'] {
@@ -163,10 +164,6 @@ ul li.task-list-item ul {
 p {
   margin-top: 22px;
   margin-bottom: 22px;
-}
-
-img {
-  max-height: none;
 }
 
 figure {
