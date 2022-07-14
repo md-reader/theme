@@ -1,6 +1,6 @@
 {
   "name": "@md-reader/theme",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "description": "md-reader's theme.",
   "main": "src/index.less",
   "repository": {

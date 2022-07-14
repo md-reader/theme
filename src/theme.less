@@ -193,6 +193,10 @@ blockquote {
     content: '';
   }
 
+  &:not(.warning,.tip) > :first-child {
+    margin-top: 0;
+  }
+
   &:not(.warning,.tip) > :last-child {
     margin-bottom: 0;
   }
