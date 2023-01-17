@@ -1,15 +1,5 @@
-.theme() {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  letter-spacing: 0.2px;
-  word-break: break-word;
-  overflow-x: hidden;
-
-  @import url('./theme.less');
+.highlight() {
   @import url('./highlight/index.less');
-  @import url('./katex.less');
 }
 
 .hljs-light() {
@@ -20,6 +10,20 @@
   @import url('./highlight/dark.less');
 }
 
-.highlight() {
+.hljs-colors() {
   @import url('./highlight/colors.less');
+}
+
+.theme() {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.2px;
+  word-break: break-word;
+  overflow-x: hidden;
+
+  @import url('./theme.less');
+  @import url('./katex.less');
+  .highlight();
 }
