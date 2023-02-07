@@ -168,8 +168,8 @@ ul li.task-list-item ul {
 }
 
 p {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 figure {
@@ -193,11 +193,11 @@ blockquote {
     content: '';
   }
 
-  &:not(.warning,.tip) > :first-child {
+  &:not(.warning, .tip) > :first-child {
     margin-top: 0;
   }
 
-  &:not(.warning,.tip) > :last-child {
+  &:not(.warning, .tip) > :last-child {
     margin-bottom: 0;
   }
 
@@ -245,12 +245,24 @@ blockquote {
 }
 
 math {
-  font: 400 1.21em KaTeX_Main,Times New Roman,serif;
+  font: 400 1.21em KaTeX_Main, Times New Roman, serif;
 }
 
 & .mermaid {
+  display: flex;
+  justify-content: center;
   letter-spacing: initial;
   line-height: initial;
+}
+
+.footnotes {
+  font-size: 12px;
+  .footnotes-list {
+    padding-left: 16px;
+    ul {
+      padding-left: 16px;
+    }
+  }
 }
 
 code,
@@ -312,6 +324,9 @@ h6 {
   margin-top: 35px;
   margin-bottom: 10px;
   color: var(--color-text-primary);
+  code {
+    font-size: inherit;
+  }
 }
 
 h1 {

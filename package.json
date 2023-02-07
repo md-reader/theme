@@ -1,6 +1,6 @@
 {
   "name": "@md-reader/theme",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "md-reader's theme.",
   "main": "src/index.less",
   "repository": {
@@ -15,5 +15,8 @@
   "homepage": "https://github.com/md-reader/theme#readme",
   "dependencies": {
     "katex": "^0.16.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.3"
   }
 }

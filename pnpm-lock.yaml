@@ -2,9 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   katex: ^0.16.4
+  prettier: ^2.8.3
 
 dependencies:
   katex: 0.16.4
+
+devDependencies:
+  prettier: 2.8.3
 
 packages:
 
@@ -19,3 +23,9 @@ packages:
     dependencies:
       commander: 8.3.0
     dev: false
+
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
