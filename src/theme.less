@@ -295,11 +295,15 @@ pre {
     background: var(--color-block-bg);
     color: var(--color-text-secondary);
 
+    &.hljs[lang] {
+      min-height: 2em;
+    }
     &.hljs[lang]:before {
       content: attr(lang);
       position: absolute;
       right: 10px;
-      top: 4px;
+      top: 8px;
+      line-height: 1;
       color: var(--color-text-gray);
     }
 
