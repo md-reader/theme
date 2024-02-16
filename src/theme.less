@@ -249,12 +249,14 @@ blockquote {
   }
 
   &.tip:before {
-    content: '?';
+    content: 'i';
+    font-family: 'KaTeX_Main';
     background: var(--color-primary);
   }
 
   &.success:before {
     content: '✓';
+    font-size: 11px;
     background: var(--color-success);
   }
 
@@ -264,7 +266,8 @@ blockquote {
   }
 
   &.danger:before {
-    content: '!';
+    content: '✕';
+    font-size: 10px;
     background: var(--color-danger);
   }
 }
