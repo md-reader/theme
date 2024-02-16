@@ -193,11 +193,11 @@ blockquote {
     content: '';
   }
 
-  &:not(.warning, .tip) > :first-child {
+  &:not(.tip, .success, .warning, .danger) > :first-child {
     margin-top: 0;
   }
 
-  &:not(.warning, .tip) > :last-child {
+  &:not(.tip, .success, .warning, .danger) > :last-child {
     margin-bottom: 0;
   }
 
@@ -205,42 +205,67 @@ blockquote {
     margin: 10px 0;
   }
 
-  &.warning {
+  &.tip,
+  &.success,
+  &.warning,
+  &.danger {
     position: relative;
-    border-left-color: var(--color-warning);
-    margin-left: 8px;
+    padding-left: 42px;
+    border-left: none;
+    border-radius: 6px;
     background: var(--color-block-bg);
-  }
-
-  &.warning:before,
-  &.tip:before {
-    position: absolute;
-    top: 14px;
-    left: -12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
-  &.warning:before {
-    content: '!';
-    color: var(--color-white);
-    background: var(--color-warning);
   }
 
   &.tip {
-    position: relative;
-    border-left-color: var(--color-primary);
-    margin-left: 8px;
-    background: var(--color-block-bg);
+    background: var(--color-primary-op-10);
+  }
+
+  &.success {
+    background: var(--color-success-op-10);
+  }
+
+  &.warning {
+    background: var(--color-warning-op-10);
+  }
+
+  &.danger {
+    background: var(--color-danger-op-10);
+  }
+
+  &.tip:before,
+  &.success:before,
+  &.warning:before,
+  &.danger:before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-align: center;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 13px;
+    border-radius: 50%;
+    color: var(--color-white);
   }
 
   &.tip:before {
     content: '?';
-    color: var(--color-white);
     background: var(--color-primary);
+  }
+
+  &.success:before {
+    content: '✓';
+    background: var(--color-success);
+  }
+
+  &.warning:before {
+    content: '!';
+    background: var(--color-warning);
+  }
+
+  &.danger:before {
+    content: '!';
+    background: var(--color-danger);
   }
 }
 
