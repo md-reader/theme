@@ -193,11 +193,11 @@ blockquote {
     content: '';
   }
 
-  &:not(.tip, .success, .warning, .danger) > :first-child {
+  &:not(.info, .tip, .success, .warning, .danger) > :first-child {
     margin-top: 0;
   }
 
-  &:not(.tip, .success, .warning, .danger) > :last-child {
+  &:not(.info, .tip, .success, .warning, .danger) > :last-child {
     margin-bottom: 0;
   }
 
@@ -205,6 +205,7 @@ blockquote {
     margin: 10px 0;
   }
 
+  &.info,
   &.tip,
   &.success,
   &.warning,
@@ -232,13 +233,15 @@ blockquote {
     background: var(--danger-color-alpha-10);
   }
 
+  &.info:before,
   &.tip:before,
   &.success:before,
   &.warning:before,
   &.danger:before {
     position: absolute;
-    top: 16px;
+    top: 50%;
     left: 16px;
+    transform: translateY(-50%);
     text-align: center;
     width: 17px;
     height: 17px;
@@ -248,9 +251,14 @@ blockquote {
     color: var(--color-white);
   }
 
-  &.tip:before {
+  &.info:before {
     content: 'i';
     font-family: 'KaTeX_Main';
+    background: var(--text-muted);
+  }
+
+  &.tip:before {
+    content: '?';
     background: var(--primary-color);
   }
 
