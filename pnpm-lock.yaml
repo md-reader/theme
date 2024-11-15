@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      katex:
+        specifier: ^0.16.11
+        version: 0.16.11
     devDependencies:
       prettier:
         specifier: ^2.8.3
@@ -14,11 +18,25 @@ importers:
 
 packages:
 
+  commander@8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+
+  katex@0.16.11:
+    resolution: {integrity: sha512-RQrI8rlHY92OLf3rho/Ts8i/XvjgguEjOkO1BEXcU3N8BqPpSzBNwV/G0Ukr+P/l3ivvJUE/Fa/CwbS6HesGNQ==}
+    hasBin: true
+
   prettier@2.8.3:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
 
 snapshots:
+
+  commander@8.3.0: {}
+
+  katex@0.16.11:
+    dependencies:
+      commander: 8.3.0
 
   prettier@2.8.3: {}
