@@ -1,3 +1,3 @@
 # @md-reader/theme
 
-md-reader's default theme.
+Markdown Reader's default theme.
