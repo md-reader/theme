@@ -1,6 +1,6 @@
 {
   "name": "@md-reader/theme",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Markdown Reader's theme.",
   "main": "src/index.less",
   "repository": {
